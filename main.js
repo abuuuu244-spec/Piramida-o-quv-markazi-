@@ -91,7 +91,7 @@
       c5_title: "Ona tili va Adabiyot",
       c5_desc: "Savodxonlik, til qoidalari, matn bilan ishlash va adabiyot tarixini mukammal o'zlashtirish.",
       c5_badge: "Majburiy blok",
-      c5_f1: "Milli sertifikatga maqsadli tayyorgarlik",
+      c5_f1: "Milliy sertifikatga maqsadli tayyorgarlik",
       c5_f2: "Insho va ijodiy matn tahlili",
       c5_f3: "Haftalik test nazorati",
       c5_duration: "6 oy",
@@ -851,6 +851,13 @@
 
     phoneInput.addEventListener("focus", () => {
       if (!phoneInput.value) phoneInput.value = "+998 (";
+    });
+
+    phoneInput.addEventListener("blur", () => {
+      const digits = phoneInput.value.replace(/\D/g, "");
+      if (digits === "998" || digits === "") {
+        phoneInput.value = "";
+      }
     });
   }
 
