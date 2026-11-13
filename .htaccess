@@ -1,0 +1,58 @@
+# Piramida O'quv Markazi - Apache Server Konfiguratsiyasi
+
+# UTF-8 kodlashni yoqish
+AddDefaultCharset UTF-8
+
+# Asosiy sahifa fayli
+DirectoryIndex index.html
+
+# MIME type aniqlamalari (server xatolarining oldini olish)
+AddType text/html .html
+AddType text/css .css
+AddType application/javascript .js
+AddType image/png .png
+AddType image/jpeg .jpg .jpeg
+AddType image/svg+xml .svg
+AddType image/x-icon .ico
+AddType application/json .json
+
+# GZIP Siqish (Sayt hajmini 70% gacha kichraytiradi)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# Kesh sozlamalari (Yuklanish tezligini oshirish)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 1 hour"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/png "access plus 6 months"
+  ExpiresByType image/jpeg "access plus 6 months"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 year"
+</IfModule>
+
+# Cache-Control Header
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+  <FilesMatch "\.(png|jpg|jpeg|gif|svg|ico)$">
+    Header set Cache-Control "public, max-age=15552000"
+  </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=3600"
+  </FilesMatch>
+  # XSS va Clickjacking himoyasi
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set X-XSS-Protection "1; mode=block"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# 404 sahifasi - index.html ga qaytarish
+ErrorDocument 404 /index.html
+
+# Fayl ko'rinishini yashirish (xavfsizlik)
+Options -Indexes

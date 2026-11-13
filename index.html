@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d281e">
+  <meta name="description" content="Piramida O'quv Markazi — sifatli ta'lim, mustahkam poydevor va yorqin kelajak garovi.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Piramida O'quv Markazi">
+  <meta property="og:description" content="Kelajagingizni bilim bilan quring! Zamonaviy ta'lim maskani.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/piramida-building-round.png">
+  <meta property="og:locale" content="uz_UZ">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Piramida O'quv Markazi">
+  <meta name="twitter:description" content="Kelajagingizni bilim bilan quring! Zamonaviy ta'lim maskani.">
+  <meta name="twitter:image" content="assets/piramida-building-round.png">
+
+  <title>Piramida O'quv Markazi — Bilim va Kelajak</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/piramida-logo.png">
+
+  <!-- Google Fonts: DM Sans & Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVBAR
+       ============================================================ -->
+  <header class="header">
+    <div class="container navbar">
+      <!-- Logo (Rasmiy Piramida logotipi) -->
+      <a href="#home" class="logo" aria-label="Piramida bosh sahifa">
+        <img src="assets/piramida-logo.png" alt="PIRAMIDA O'QUV MARKAZI" class="brand-logo-img">
+      </a>
+
+      <!-- Navigation links -->
+      <nav aria-label="Asosiy menyu">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" data-i18n="nav_home">Bosh sahifa</a></li>
+          <li><a href="#courses" data-i18n="nav_courses">Kurslar</a></li>
+          <li><a href="#about" data-i18n="nav_about">Markaz haqida</a></li>
+          <li><a href="#teachers" data-i18n="nav_teachers">Ustozlar</a></li>
+          <li><a href="#faq" data-i18n="nav_faq">Savol-javob</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Aloqa</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Controls: Language + Dark/Light Theme + CTA -->
+      <div class="nav-controls">
+        <!-- Language Switcher -->
+        <div class="lang-switcher" role="group" aria-label="Tilni tanlash">
+          <button type="button" class="lang-btn active" data-lang="uz" title="O'zbekcha">UZ</button>
+          <button type="button" class="lang-btn" data-lang="ru" title="Русский">RU</button>
+          <button type="button" class="lang-btn" data-lang="en" title="English">EN</button>
+        </div>
+
+        <!-- Dark/Light Mode Toggle -->
+        <button
+          type="button"
+          class="theme-toggle-btn"
+          id="themeToggle"
+          aria-label="Tungi rejimga o'tish"
+          title="Tun / Kun rejimini almashtirish"
+        >🌙</button>
+
+        <!-- CTA Button -->
+        <a href="#register" class="btn btn-gold" data-i18n="nav_enroll">Kursga yozilish ↗</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Menyuni ochish"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO SECTION
+         ============================================================ -->
+    <section class="hero" id="home">
+      <div class="hero-mesh"></div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge reveal">
+            <span class="pulse-dot"></span>
+            <span data-i18n="hero_badge">BILIM — KELAJAK POYDEVORI</span>
+          </div>
+
+          <h1 class="reveal">
+            <span data-i18n="hero_title_1">Kelajagingizni </span>
+            <em data-i18n="hero_title_highlight">bilim bilan</em>
+            <span data-i18n="hero_title_2"> quring!</span>
+          </h1>
+
+          <p class="hero-text reveal" data-i18n="hero_desc">
+            Piramida O'quv Markazida o'z maqsadlaringiz sari ishonch bilan qadam qo'ying.
+            Zamonaviy metodika, tajribali ustozlar va do'stona muhit sizni kutmoqda.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a href="#register" class="btn btn-gold" data-i18n="hero_btn_enroll">Hoziroq ro'yxatdan o'tish ↗</a>
+            <a href="#courses" class="btn btn-outline" data-i18n="hero_btn_courses">Kurslarni ko'rish ↓</a>
+          </div>
+
+          <div class="hero-guarantee reveal">
+            <span class="icon">✦</span>
+            <span data-i18n="hero_guarantee">Har bir katta natija bugungi kichik qadamdan boshlanadi.</span>
+          </div>
+        </div>
+
+        <!-- Real Building Visual Showcase -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="hero-building-circle-stage">
+            <img
+              src="assets/piramida-building-round.png"
+              alt="Piramida O'quv Markazi binosi"
+              class="building-round-img"
+              loading="eager"
+            >
+            <div class="building-glass-caption">
+              <div class="building-glass-title" data-i18n="badge_brand_title">PIRAMIDA O'QUV MARKAZI</div>
+              <div class="building-glass-sub" data-i18n="badge_brand_slogan">Bilim &bull; Samara &bull; Kelajak</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ANIMATED STATS BAR
+         ============================================================ -->
+    <section class="stats-bar" aria-label="Statistika">
+      <div class="container stats-grid">
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="1500" data-suffix="+">0+</span>
+          <span class="stat-label" data-i18n="stat_1_label">Muvaffaqiyatli o'quvchilar</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="12" data-suffix="+">0+</span>
+          <span class="stat-label" data-i18n="stat_2_label">Zamonaviy ta'lim yo'nalishi</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="96" data-suffix="%">0%</span>
+          <span class="stat-label" data-i18n="stat_3_label">O'qishga kirish ko'rsatkichi</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="100" data-suffix="%">0%</span>
+          <span class="stat-label" data-i18n="stat_4_label">Amaliy darslar va natija</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         COURSES SECTION WITH TABS (13 TA FAN)
+         ============================================================ -->
+    <section class="section courses-section" id="courses">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <div class="eyebrow" data-i18n="courses_eyebrow">TA'LIM YO'NALISHLARI</div>
+          <h2 class="section-title" data-i18n="courses_title">O'zingizga mos kursni tanlang</h2>
+          <p class="section-description" data-i18n="courses_desc">
+            Piramida o'quv markazining barcha yo'nalishlari, malakali ustozlari, qulay dars jadvallari va hamyonbop oylik to'lovlari.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="courses-filter reveal" role="tablist">
+          <button type="button" class="filter-btn active" data-filter="all">Barchasi (12 ta)</button>
+          <button type="button" class="filter-btn" data-filter="languages">Tillar (Ingliz, Rus, Ona tili)</button>
+          <button type="button" class="filter-btn" data-filter="exact">Matematika & Fizika</button>
+          <button type="button" class="filter-btn" data-filter="humanities">Kimyo, Biologiya & Ijtimoiy</button>
+        </div>
+
+        <!-- Course Cards Grid (13 TA FAN) -->
+        <div class="courses-grid">
+
+          <!-- 1. Ona tili -->
+          <article class="course-card reveal" data-category="languages">
+            <div class="course-top">
+              <div class="course-icon-wrap" aria-hidden="true">📖</div>
+              <span class="course-badge">Ona tili</span>
+            </div>
+            <h3>Ona tili</h3>
+            <div class="course-meta-box">
+              <div class="course-meta-row">
+                <span class="meta-icon">👨‍🏫</span>
+                <div><strong>Ustoz:</strong> <span class="meta-val">Bozorboyev Murodbek</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">📅</span>
+                <div><strong>Kunlar:</strong> <span class="meta-val">Seshanba, Payshanba, Shanba</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">🕒</span>
+                <div><strong>Dars vaqti:</strong> <span class="meta-val">16:00 - 18:00</span></div>
+              </div>
+            </div>
+            <div class="course-price-pill">
+              <span class="course-price-label">Oylik to'lov:</span>
+              <span class="course-price-amount">350 000 so'm</span>
+            </div>
+            <div class="course-bottom">
+              <span class="course-duration">⚡ Milliy sertifikat & DTM</span>
+              <a href="#register" class="course-link" data-course-select="Ona tili">Kursga yozilish ↗</a>
+            </div>
+          </article>
+
+          <!-- 2. Matematika (Kattalar) -->
+          <article class="course-card reveal" data-category="exact">
+            <div class="course-top">
+              <div class="course-icon-wrap" aria-hidden="true">📐</div>
+              <span class="course-badge">Kattalar</span>
+            </div>
+            <h3>Matematika (Kattalar)</h3>
+            <div class="course-meta-box">
+              <div class="course-meta-row">
+                <span class="meta-icon">👨‍🏫</span>
+                <div><strong>Ustoz:</strong> <span class="meta-val">Tursunboyev Haitboy</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">📅</span>
+                <div><strong>Kunlar:</strong> <span class="meta-val">Seshanba, Payshanba, Shanba</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">🕒</span>
+                <div><strong>Dars vaqti:</strong> <span class="meta-val">16:00 - 18:00</span></div>
+              </div>
+              <div class="course-extra-badge">🌅 Ertalabki guruh: 08:00 - 10:00</div>
+            </div>
+            <div class="course-price-pill">
+              <span class="course-price-label">Oylik to'lov:</span>
+              <span class="course-price-amount">350 000 so'm</span>
+            </div>
+            <div class="course-bottom">
+              <span class="course-duration">🎓 Abituriyent va OTM tayyorlov</span>
+              <a href="#register" class="course-link" data-course-select="Matematika (Kattalar)">Kursga yozilish ↗</a>
+            </div>
+          </article>
+
+          <!-- 3. Matematika (Yosh bolalar) -->
+          <article class="course-card reveal" data-category="exact">
+            <div class="course-top">
+              <div class="course-icon-wrap" aria-hidden="true">🔢</div>
+              <span class="course-badge">Yosh bolalar</span>
+            </div>
+            <h3>Matematika (Yosh bolalar)</h3>
+            <div class="course-meta-box">
+              <div class="course-meta-row">
+                <span class="meta-icon">👨‍🏫</span>
+                <div><strong>Ustoz:</strong> <span class="meta-val">Ergashev Ohunjon</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">📅</span>
+                <div><strong>Kunlar:</strong> <span class="meta-val">Seshanba, Payshanba, Shanba</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">🕒</span>
+                <div><strong>Dars vaqti:</strong> <span class="meta-val">16:00 - 18:00</span></div>
+              </div>
+            </div>
+            <div class="course-price-pill">
+              <span class="course-price-label">Oylik to'lov:</span>
+              <span class="course-price-amount">350 000 so'm</span>
+            </div>
+            <div class="course-bottom">
+              <span class="course-duration">🧩 Mantiq va o'quv dasturi</span>
+              <a href="#register" class="course-link" data-course-select="Matematika (Yosh bolalar)">Kursga yozilish ↗</a>
+            </div>
+          </article>
+
+          <!-- 4. Matematika (Kichkinalar) -->
+          <article class="course-card reveal" data-category="exact">
+            <div class="course-top">
+              <div class="course-icon-wrap" aria-hidden="true">🧮</div>
+              <span class="course-badge">Kichkinalar</span>
+            </div>
+            <h3>Matematika (Kichkinalar)</h3>
+            <div class="course-meta-box">
+              <div class="course-meta-row">
+                <span class="meta-icon">👨‍🏫</span>
+                <div><strong>Ustoz:</strong> <span class="meta-val">Saidmurodov Ro'zimurod</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">📅</span>
+                <div><strong>Kunlar:</strong> <span class="meta-val">Seshanba, Payshanba, Shanba</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">🕒</span>
+                <div><strong>Ertalab:</strong> <span class="meta-val">08:00 - 10:00</span></div>
+              </div>
+              <div class="course-extra-badge">☀️ Tushdan keyin: 14:00 - 16:00</div>
+            </div>
+            <div class="course-price-pill">
+              <span class="course-price-label">Oylik to'lov:</span>
+              <span class="course-price-amount">250 000 so'm</span>
+            </div>
+            <div class="course-bottom">
+              <span class="course-duration">👶 Bolalar uchun poydevor</span>
+              <a href="#register" class="course-link" data-course-select="Matematika (Kichkinalar)">Kursga yozilish ↗</a>
+            </div>
+          </article>
+
+          <!-- 5. Ingliz tili (Ibrohim) -->
+          <article class="course-card reveal" data-category="languages">
+            <div class="course-top">
+              <div class="course-icon-wrap" aria-hidden="true">🇬🇧</div>
+              <span class="course-badge">Ibrohim ustoz</span>
+            </div>
+            <h3>Ingliz tili (Ibrohim)</h3>
+            <div class="course-meta-box">
+              <div class="course-meta-row">
+                <span class="meta-icon">👨‍🏫</span>
+                <div><strong>Ustoz:</strong> <span class="meta-val">Majidov Ibrohim</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">📅</span>
+                <div><strong>Kunlar:</strong> <span class="meta-val">Dushanba, Chorshanba, Juma</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">🕒</span>
+                <div><strong>Dars vaqti:</strong> <span class="meta-val">14:00 - 18:00</span></div>
+              </div>
+            </div>
+            <div class="course-price-pill">
+              <span class="course-price-label">Oylik to'lov:</span>
+              <span class="course-price-amount">350 000 so'm</span>
+            </div>
+            <div class="course-bottom">
+              <span class="course-duration">🗣 Speaking, Grammar & IELTS</span>
+              <a href="#register" class="course-link" data-course-select="Ingliz tili (Ibrohim)">Kursga yozilish ↗</a>
+            </div>
+          </article>
+
+          <!-- 6. Kimyo -->
+          <article class="course-card reveal" data-category="humanities">
+            <div class="course-top">
+              <div class="course-icon-wrap" aria-hidden="true">🧪</div>
+              <span class="course-badge">Tabiiy fan</span>
+            </div>
+            <h3>Kimyo</h3>
+            <div class="course-meta-box">
+              <div class="course-meta-row">
+                <span class="meta-icon">👨‍🏫</span>
+                <div><strong>Ustoz:</strong> <span class="meta-val">Bekbo'tayev Zohid</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">📅</span>
+                <div><strong>Kunlar:</strong> <span class="meta-val">Dushanba, Chorshanba, Juma</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">🕒</span>
+                <div><strong>Dars vaqti:</strong> <span class="meta-val">14:00 - 18:00</span></div>
+              </div>
+            </div>
+            <div class="course-price-pill">
+              <span class="course-price-label">Oylik to'lov:</span>
+              <span class="course-price-amount">350 000 so'm</span>
+            </div>
+            <div class="course-bottom">
+              <span class="course-duration">🩺 Tibbiyot va DTM yo'nalishi</span>
+              <a href="#register" class="course-link" data-course-select="Kimyo">Kursga yozilish ↗</a>
+            </div>
+          </article>
+
+          <!-- 7. Rus tili -->
+          <article class="course-card reveal" data-category="languages">
+            <div class="course-top">
+              <div class="course-icon-wrap" aria-hidden="true">🇷🇺</div>
+              <span class="course-badge">Rus tili</span>
+            </div>
+            <h3>Rus tili</h3>
+            <div class="course-meta-box">
+              <div class="course-meta-row">
+                <span class="meta-icon">👩‍🏫</span>
+                <div><strong>Ustoz:</strong> <span class="meta-val">Ortiqova Iroda</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">📅</span>
+                <div><strong>Kunlar:</strong> <span class="meta-val">Seshanba, Payshanba, Shanba</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">🕒</span>
+                <div><strong>Dars vaqti:</strong> <span class="meta-val">14:00 - 16:00</span></div>
+              </div>
+              <div class="course-extra-badge">🌅 Ertalabki darsi: 08:00 - 10:00</div>
+            </div>
+            <div class="course-price-pill">
+              <span class="course-price-label">Oylik to'lov:</span>
+              <span class="course-price-amount">350 000 so'm</span>
+            </div>
+            <div class="course-bottom">
+              <span class="course-duration">💬 Erkin so'zlashuv & Grammatika</span>
+              <a href="#register" class="course-link" data-course-select="Rus tili">Kursga yozilish ↗</a>
+            </div>
+          </article>
+
+          <!-- 8. Tarix -->
+          <article class="course-card reveal" data-category="humanities">
+            <div class="course-top">
+              <div class="course-icon-wrap" aria-hidden="true">🏛</div>
+              <span class="course-badge">Gumanitar</span>
+            </div>
+            <h3>Tarix</h3>
+            <div class="course-meta-box">
+              <div class="course-meta-row">
+                <span class="meta-icon">👨‍🏫</span>
+                <div><strong>Ustoz:</strong> <span class="meta-val">Bozorboyev Murodbek</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">📅</span>
+                <div><strong>Kunlar:</strong> <span class="meta-val">Seshanba, Payshanba, Shanba</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">🕒</span>
+                <div><strong>Dars vaqti:</strong> <span class="meta-val">14:00 - 16:00</span></div>
+              </div>
+            </div>
+            <div class="course-price-pill">
+              <span class="course-price-label">Oylik to'lov:</span>
+              <span class="course-price-amount">350 000 so'm</span>
+            </div>
+            <div class="course-bottom">
+              <span class="course-duration">📜 O'zbekiston va Jahon tarixi</span>
+              <a href="#register" class="course-link" data-course-select="Tarix">Kursga yozilish ↗</a>
+            </div>
+          </article>
+
+          <!-- 9. Ingliz tili (Jaloliddin) -->
+          <article class="course-card reveal" data-category="languages">
+            <div class="course-top">
+              <div class="course-icon-wrap" aria-hidden="true">🌍</div>
+              <span class="course-badge">Jaloliddin ustoz</span>
+            </div>
+            <h3>Ingliz tili (Jaloliddin)</h3>
+            <div class="course-meta-box">
+              <div class="course-meta-row">
+                <span class="meta-icon">👨‍🏫</span>
+                <div><strong>Ustoz:</strong> <span class="meta-val">Yangiboyev Jaloliddin</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">📅</span>
+                <div><strong>Kunlar:</strong> <span class="meta-val">Seshanba, Payshanba, Shanba</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">🕒</span>
+                <div><strong>Dars vaqti:</strong> <span class="meta-val">16:30 - 18:30</span></div>
+              </div>
+              <div class="course-extra-badge">🌅 Ertalabki guruh: 08:00 - 10:00</div>
+            </div>
+            <div class="course-price-pill">
+              <span class="course-price-label">Oylik to'lov:</span>
+              <span class="course-price-amount">250 000 so'm</span>
+            </div>
+            <div class="course-bottom">
+              <span class="course-duration">🎯 Boshlang'ich & O'rta daraja</span>
+              <a href="#register" class="course-link" data-course-select="Ingliz tili (Jaloliddin)">Kursga yozilish ↗</a>
+            </div>
+          </article>
+
+          <!-- 10. Biologiya -->
+          <article class="course-card reveal" data-category="humanities">
+            <div class="course-top">
+              <div class="course-icon-wrap" aria-hidden="true">🧬</div>
+              <span class="course-badge">Tabiiy fan</span>
+            </div>
+            <h3>Biologiya</h3>
+            <div class="course-meta-box">
+              <div class="course-meta-row">
+                <span class="meta-icon">👩‍🏫</span>
+                <div><strong>Ustoz:</strong> <span class="meta-val">Abduvoitova Gulnora</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">📅</span>
+                <div><strong>Kunlar:</strong> <span class="meta-val">Seshanba, Payshanba, Shanba</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">🕒</span>
+                <div><strong>Dars vaqti:</strong> <span class="meta-val">16:30 - 18:30</span></div>
+              </div>
+            </div>
+            <div class="course-price-pill">
+              <span class="course-price-label">Oylik to'lov:</span>
+              <span class="course-price-amount">350 000 so'm</span>
+            </div>
+            <div class="course-bottom">
+              <span class="course-duration">🔬 Anatomiya, Botanika, Genetika</span>
+              <a href="#register" class="course-link" data-course-select="Biologiya">Kursga yozilish ↗</a>
+            </div>
+          </article>
+
+          <!-- 11. Fizika -->
+          <article class="course-card reveal" data-category="exact">
+            <div class="course-top">
+              <div class="course-icon-wrap" aria-hidden="true">⚛️</div>
+              <span class="course-badge">Aniq fan</span>
+            </div>
+            <h3>Fizika</h3>
+            <div class="course-meta-box">
+              <div class="course-meta-row">
+                <span class="meta-icon">👨‍🏫</span>
+                <div><strong>Ustoz:</strong> <span class="meta-val">Azzamqulov Islombek</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">📅</span>
+                <div><strong>Kunlar:</strong> <span class="meta-val">Dushanba, Chorshanba, Juma</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">🕒</span>
+                <div><strong>Dars vaqti:</strong> <span class="meta-val">16:30 - 18:30</span></div>
+              </div>
+            </div>
+            <div class="course-price-pill">
+              <span class="course-price-label">Oylik to'lov:</span>
+              <span class="course-price-amount">350 000 so'm</span>
+            </div>
+            <div class="course-bottom">
+              <span class="course-duration">⚙️ Mexanika, Optika, Termodinamika</span>
+              <a href="#register" class="course-link" data-course-select="Fizika">Kursga yozilish ↗</a>
+            </div>
+          </article>
+
+          <!-- 12. Huquq -->
+          <article class="course-card reveal" data-category="humanities">
+            <div class="course-top">
+              <div class="course-icon-wrap" aria-hidden="true">⚖️</div>
+              <span class="course-badge">Ijtimoiy</span>
+            </div>
+            <h3>Huquq</h3>
+            <div class="course-meta-box">
+              <div class="course-meta-row">
+                <span class="meta-icon">👨‍🏫</span>
+                <div><strong>Ustoz:</strong> <span class="meta-val">G'oibnazarov Nodir</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">📅</span>
+                <div><strong>Kunlar:</strong> <span class="meta-val">Seshanba, Payshanba, Shanba</span></div>
+              </div>
+              <div class="course-meta-row">
+                <span class="meta-icon">🕒</span>
+                <div><strong>Dars vaqti:</strong> <span class="meta-val">15:00 - 17:00</span></div>
+              </div>
+            </div>
+            <div class="course-price-pill">
+              <span class="course-price-label">Oylik to'lov:</span>
+              <span class="course-price-amount">350 000 so'm</span>
+            </div>
+            <div class="course-bottom">
+              <span class="course-duration">⚖️ Davlat va Huquq asoslari</span>
+              <a href="#register" class="course-link" data-course-select="Huquq">Kursga yozilish ↗</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT SECTION
+         ============================================================ -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <!-- Visual Column -->
+        <div class="about-visual-box about-visual-box--transparent reveal" aria-hidden="true">
+          <div class="hero-building-circle-stage" style="width: min(100%, 390px);">
+            <img src="assets/piramida-building-round.png" alt="Piramida O'quv Markazi binosi" class="building-round-img">
+            <div class="building-glass-caption">
+              <div class="building-glass-title" data-i18n="badge_brand_title">PIRAMIDA O'QUV MARKAZI</div>
+              <div class="building-glass-sub" data-i18n="badge_brand_slogan">Bilim &bull; Samara &bull; Kelajak</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Column -->
+        <div class="about-content-box reveal">
+          <div class="eyebrow" data-i18n="about_eyebrow">BIZ HAQIMIZDA</div>
+          <h2 class="section-title" data-i18n="about_title">Har bir o'quvchining kelajagi biz uchun muhim</h2>
+          <p class="section-description" data-i18n="about_desc">
+            Piramida O'quv Markazi — sifatli ta'lim, mustahkam poydevor va yorqin kelajak garovi.
+            Biz har bir o'quvchining qobiliyatini kashf etib, ularni maqsadlari sari yetaklaymiz.
+          </p>
+
+          <div class="benefits-grid">
+            <div class="benefit-card">
+              <div class="benefit-icon">✓</div>
+              <div class="benefit-text">
+                <strong data-i18n="b1_title">Tizimli ta'lim</strong>
+                <small data-i18n="b1_desc">Har bir dars puxta o'ylangan reja va xalqaro metodika asosida olib boriladi.</small>
+              </div>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-icon">✓</div>
+              <div class="benefit-text">
+                <strong data-i18n="b2_title">Kuchli mentorlar</strong>
+                <small data-i18n="b2_desc">O'z sohasida yuqori natijalarga erishgan, sertifikatlangan mutaxassislar.</small>
+              </div>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-icon">✓</div>
+              <div class="benefit-text">
+                <strong data-i18n="b3_title">Doimiy monitoring</strong>
+                <small data-i18n="b3_desc">Har haftalik test sinovlari va ota-onalarga o'quvchi natijalari hisoboti.</small>
+              </div>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-icon">✓</div>
+              <div class="benefit-text">
+                <strong data-i18n="b4_title">Shinam muhit</strong>
+                <small data-i18n="b4_desc">Zamonaviy jihozlangan xonalar, qulay lokatsiya va do'stona atmosfera.</small>
+              </div>
+            </div>
+          </div>
+
+          <a href="#register" class="btn btn-gold" data-i18n="about_btn">Biz bilan o'qing ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROCESS / HOW TO START
+         ============================================================ -->
+    <section class="section process-section">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <div class="eyebrow" data-i18n="process_eyebrow">QANDAY BOSHLAYMIZ?</div>
+          <h2 class="section-title" data-i18n="process_title">Ta'limni boshlash juda oson</h2>
+          <p class="section-description" data-i18n="process_desc">
+            Atigi 4 ta oddiy qadam orqali Piramida oilasiga a'zo bo'ling.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step reveal">
+            <div class="step-num">01</div>
+            <h3 data-i18n="step1_title">Ariza qoldiring</h3>
+            <p data-i18n="step1_desc">Sayt orqali o'zingizga mos kursni tanlab, formani to'ldiring.</p>
+          </div>
+
+          <div class="process-step reveal">
+            <div class="step-num">02</div>
+            <h3 data-i18n="step2_title">Bepul konsultatsiya</h3>
+            <p data-i18n="step2_desc">Administratorimiz siz bilan bog'lanib, barcha savollaringizga javob beradi.</p>
+          </div>
+
+          <div class="process-step reveal">
+            <div class="step-num">03</div>
+            <h3 data-i18n="step3_title">Darajangizni aniqlang</h3>
+            <p data-i18n="step3_desc">Bepul diagnostik test topshirib, o'zingizga mos guruhga yoziling.</p>
+          </div>
+
+          <div class="process-step reveal">
+            <div class="step-num">04</div>
+            <h3 data-i18n="step4_title">Darslarni boshlang</h3>
+            <p data-i18n="step4_desc">Birinchi darsdan bilim oling va o'z orzuingiz sari dadil qadam tashlang.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TEACHERS / MENTORS
+         ============================================================ -->
+    <section class="section teachers-section" id="teachers">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <div class="eyebrow" data-i18n="teachers_eyebrow">USTOZLARIMIZ</div>
+          <h2 class="section-title" data-i18n="teachers_title">O'z sohasining ustalari</h2>
+          <p class="section-description" data-i18n="teachers_desc">
+            Katta tajribaga ega, yoshlarga ilhom beruvchi professional pedagoglar.
+          </p>
+        </div>
+
+        <div class="teachers-grid">
+          <!-- Teacher 1 -->
+          <article class="teacher-card reveal">
+            <div class="teacher-avatar-box">
+              <div class="teacher-icon-symbol">📐</div>
+            </div>
+            <div class="teacher-content">
+              <span class="teacher-subject">Matematika</span>
+              <h3>Tursunboyev Haitboy</h3>
+              <p>Kattalar va abituriyentlar ustozi. Aniq fanlarni mantiqiy va chuqur o'rgatish bo'yicha katta tajribaga ega.</p>
+            </div>
+          </article>
+
+          <!-- Teacher 2 -->
+          <article class="teacher-card reveal">
+            <div class="teacher-avatar-box">
+              <div class="teacher-icon-symbol">🇬🇧</div>
+            </div>
+            <div class="teacher-content">
+              <span class="teacher-subject">Ingliz tili</span>
+              <h3>Majidov Ibrohim</h3>
+              <p>Ingliz tili grammatikasi, so'zlashuv va xalqaro imtihonlarga tayyorlovchi tajribali mentor.</p>
+            </div>
+          </article>
+
+          <!-- Teacher 3 -->
+          <article class="teacher-card reveal">
+            <div class="teacher-avatar-box">
+              <div class="teacher-icon-symbol">📖</div>
+            </div>
+            <div class="teacher-content">
+              <span class="teacher-subject">Ona tili & Tarix</span>
+              <h3>Bozorboyev Murodbek</h3>
+              <p>Ona tili, adabiyot va tarix fanlari ustozi. Milliy sertifikat va DTM imtihonlari bo'yicha mutaxassis.</p>
+            </div>
+          </article>
+
+          <!-- Teacher 4 -->
+          <article class="teacher-card reveal">
+            <div class="teacher-avatar-box">
+              <div class="teacher-icon-symbol">🧪</div>
+            </div>
+            <div class="teacher-content">
+              <span class="teacher-subject">Kimyo</span>
+              <h3>Bekbo'tayev Zohid</h3>
+              <p>Tibbiyot va kimyo-texnologiya OTMlariga kiruvchilar uchun kimyoni oson usullarda o'rgatuvchi pedagog.</p>
+            </div>
+          </article>
+
+          <!-- Teacher 5 -->
+          <article class="teacher-card reveal">
+            <div class="teacher-avatar-box">
+              <div class="teacher-icon-symbol">🇷🇺</div>
+            </div>
+            <div class="teacher-content">
+              <span class="teacher-subject">Rus tili</span>
+              <h3>Ortiqova Iroda</h3>
+              <p>Rus tilida ravon so'zlashuv, to'g'ri grammatika va professional muloqot ko'nikmalarini rivojlantiruvchi ustoz.</p>
+            </div>
+          </article>
+
+          <!-- Teacher 6 -->
+          <article class="teacher-card reveal">
+            <div class="teacher-avatar-box">
+              <div class="teacher-icon-symbol">⚛️</div>
+            </div>
+            <div class="teacher-content">
+              <span class="teacher-subject">Fizika</span>
+              <h3>Azzamqulov Islombek</h3>
+              <p>Fizika qonuniyatlari, formulalar va murakkab masalalarni sodda tilda tushuntiruvchi mahoratli o'qituvchi.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         REVIEWS / TESTIMONIALS
+         ============================================================ -->
+    <section class="section reviews-section">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <div class="eyebrow" style="color:var(--brand-gold-light)" data-i18n="reviews_eyebrow">NATIJALAR VA FIKRLAR</div>
+          <h2 class="section-title" data-i18n="reviews_title">O'quvchilarimiz biz haqimizda</h2>
+          <p class="section-description" data-i18n="reviews_desc">
+            Bizning eng katta yutug'imiz — bu o'quvchilarimizning hayotdagi g'alabalari.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="review-card reveal">
+            <div class="review-stars">★★★★★</div>
+            <p data-i18n="r1_text">“Piramida markazida 6 oy davomida IELTS kursida tahsil oldim va 7.5 ball oldim! Ustozlarning samimiy yondashuvi va Speaking Club darslari katta yordam berdi.”</p>
+            <div class="review-author">
+              <div class="author-avatar">M</div>
+              <div class="author-info">
+                <strong data-i18n="r1_author">Madina Karimova</strong>
+                <small data-i18n="r1_course">IELTS kursi bitiruvchisi</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal">
+            <div class="review-stars">★★★★★</div>
+            <p data-i18n="r2_text">“Matematika va fizika fanlaridan abituriyent kursida o'qidim. Davlat granti asosida Toshkent Axborot Texnologiyalari Universitetiga qabul qilindim!”</p>
+            <div class="review-author">
+              <div class="author-avatar">B</div>
+              <div class="author-info">
+                <strong data-i18n="r2_author">Bobur Mirzayev</strong>
+                <small data-i18n="r2_course">Abituriyent tayyorlov kursi</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal">
+            <div class="review-stars">★★★★★</div>
+            <p data-i18n="r3_text">“IT sohasiga qiziqib kelgan edim. Hozirda o'z portfoliom bor va birinchi web loyihalarimni tayyorlab sotmoqdaman. Barcha ustozlarga rahmat!”</p>
+            <div class="review-author">
+              <div class="author-avatar">D</div>
+              <div class="author-info">
+                <strong data-i18n="r3_author">Diyorbek Ismoilov</strong>
+                <small data-i18n="r3_course">Web dasturlash kursi</small>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FAQ ACCORDION
+         ============================================================ -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <div class="eyebrow" data-i18n="faq_eyebrow">SAVOL-JAVOB</div>
+          <h2 class="section-title" data-i18n="faq_title">Ko'p beriladigan savollar</h2>
+          <p class="section-description" data-i18n="faq_desc">
+            O'quv markazimiz va darslar haqida eng muhim savollarga javoblar.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="q1">Kurslarga qanday yozilish mumkin?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="a1">Saytdagi ro'yxatdan o'tish formasini to'ldiring yoki bizning administratorimiz bilan bog'laning (+998 97 152-84-00). Biz sizga mos vaqt va guruhni belgilaymiz.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="q2">Birinchi dars bepulmi?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="a2">Ha! Siz har qanday kursimizning ilk darsiga bepul qatnashib, ustozning dars o'tish uslubi va sharoitlar bilan tanishishingiz mumkin.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="q3">Dars jadvali qanday tuzilgan?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="a3">Darslar haftada 3 kun, 1.5 - 2 soatdan o'tiladi. Ertalabki, tushki va kechki qulay vaqt guruhlari mavjud.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="q4">Kurs yakunida sertifikat beriladimi?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="a4">Ha, kursni muvaffaqiyatli tamomlagan va yakuniy imtihonlarni topshirgan o'quvchilarga maxsus sertifikat taqdim etiladi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         REGISTER / ENROLLMENT FORM
+         ============================================================ -->
+    <section class="section register-section" id="register">
+      <div class="container">
+        <div class="register-card-box reveal">
+          <!-- Information Side -->
+          <div class="register-info-side">
+            <div>
+              <div class="eyebrow" style="color:var(--brand-gold-light)" data-i18n="reg_eyebrow">BIRINCHI QADAM</div>
+              <h2 class="section-title" data-i18n="reg_title">Orzularingiz sari bugun qadam qo'ying!</h2>
+              <p data-i18n="reg_desc">
+                Formani to'ldiring. Administratorimiz siz bilan bog'lanib, barcha chegirmalar va dars jadvallari haqida ma'lumot beradi.
+              </p>
+
+              <ul class="register-perks">
+                <li data-i18n="reg_perk1">✦ Bepul diagnostik test va sinov darsi</li>
+                <li data-i18n="reg_perk2">✦ Darsliklar va o'quv materiallari bepul</li>
+                <li data-i18n="reg_perk3">✦ O'quvchilar uchun shaxsiy rivojlanish monitoringi</li>
+              </ul>
+            </div>
+
+            <div style="margin-top: 30px; font-size: 13px; color: var(--brand-gold-light); font-weight: 700;">
+              ⚡ PIRAMIDA — SIFATLI TA'LIM MASKANI
+            </div>
+          </div>
+
+          <!-- Form Side -->
+          <form class="register-form-side" id="registerForm" novalidate>
+            <h3 data-i18n="reg_form_title">Kursga ro'yxatdan o'tish</h3>
+            <p data-i18n="reg_form_sub">Ma'lumotlaringizni qoldiring, tez orada aloqaga chiqamiz.</p>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="fullName" data-i18n="lbl_name">Ism va familiyangiz *</label>
+                <input
+                  id="fullName"
+                  name="fullName"
+                  type="text"
+                  placeholder="Masalan: Aziza Rahimova"
+                  data-i18n-ph="ph_name"
+                  required
+                  minlength="2"
+                  autocomplete="name"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="phone" data-i18n="lbl_phone">Telefon raqamingiz *</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  placeholder="+998 (90) 123-45-67"
+                  data-i18n-ph="ph_phone"
+                  required
+                  autocomplete="tel"
+                >
+              </div>
+
+              <div class="form-group full">
+                <label for="course" data-i18n="lbl_course">Qaysi kurs qiziqtirmoqda? *</label>
+                <select id="course" name="course" required>
+                  <option value="" data-i18n="opt_select">Kursni tanlang</option>
+                  <option value="Ona tili">Ona tili (Bozorboyev Murodbek) — 350 000 so'm</option>
+                  <option value="Matematika (Kattalar)">Matematika (Kattalar - Tursunboyev Haitboy) — 350 000 so'm</option>
+                  <option value="Matematika (Yosh bolalar)">Matematika (Yosh bolalar - Ergashev Ohunjon) — 350 000 so'm</option>
+                  <option value="Matematika (Kichkinalar)">Matematika (Kichkinalar - Saidmurodov Ro'zimurod) — 250 000 so'm</option>
+                  <option value="Ingliz tili (Ibrohim)">Ingliz tili (Majidov Ibrohim) — 350 000 so'm</option>
+                  <option value="Kimyo">Kimyo (Bekbo'tayev Zohid) — 350 000 so'm</option>
+                  <option value="Rus tili">Rus tili (Ortiqova Iroda) — 350 000 so'm</option>
+                  <option value="Tarix">Tarix (Bozorboyev Murodbek) — 350 000 so'm</option>
+                  <option value="Ingliz tili (Jaloliddin)">Ingliz tili (Yangiboyev Jaloliddin) — 250 000 so'm</option>
+                  <option value="Biologiya">Biologiya (Abduvoitova Gulnora) — 350 000 so'm</option>
+                  <option value="Fizika">Fizika (Azzamqulov Islombek) — 350 000 so'm</option>
+                  <option value="Huquq">Huquq (G'oibnazarov Nodir) — 350 000 so'm</option>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <label for="message" data-i18n="lbl_msg">Qo'shimcha savol yoki izohingiz</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Qulay dars vaqti yoki boshqa savollaringiz..."
+                  data-i18n-ph="ph_msg"
+                ></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-gold" data-i18n="btn_submit">Arizani yuborish ↗</button>
+
+            <div class="form-message" id="formMessage" role="status" aria-live="polite" data-i18n="msg_success">
+              ✅ Arizangiz muvaffaqiyatli qabul qilindi! Tez orada administrator siz bilan bog'lanadi.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT & LOCATION
+         ============================================================ -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <div class="eyebrow" data-i18n="contact_eyebrow">BIZ BILAN BOG'LANING</div>
+          <h2 class="section-title" data-i18n="contact_title">Har doim aloqadamiz</h2>
+          <p class="section-description" data-i18n="contact_desc">
+            Biz bilan qo'ng'iroq yoki Telegram orqali bog'lanishingiz, yoki markazimizga tashrif buyurishingiz mumkin.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Cards -->
+          <div class="contact-cards-col reveal">
+            <!-- Administrator & Phone -->
+            <a href="tel:+998971528400" class="contact-card">
+              <div class="contact-icon-box" aria-hidden="true">☎</div>
+              <div class="contact-info">
+                <strong data-i18n="c_admin_label">Administrator</strong>
+                <span data-i18n="c_admin_val">Isroilova Ozoda — +998 (97) 152-84-00</span>
+              </div>
+            </a>
+
+            <!-- Telegram Admin -->
+            <a href="https://t.me/Isroilova_Ozoda" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-icon-box" aria-hidden="true">✈</div>
+              <div class="contact-info">
+                <strong data-i18n="c_tg_label">Telegram (Admin)</strong>
+                <span>@Isroilova_Ozoda</span>
+              </div>
+            </a>
+
+            <!-- Telegram Bot -->
+            <a href="https://t.me/Peramidauzbot" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-icon-box" aria-hidden="true">🤖</div>
+              <div class="contact-info">
+                <strong data-i18n="c_bot_label">Rasmiy Telegram Bot</strong>
+                <span>@Peramidauzbot</span>
+              </div>
+            </a>
+
+            <!-- Google Maps -->
+            <a href="https://maps.app.goo.gl/orwFAVu6N3APkD216" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-icon-box" aria-hidden="true">📍</div>
+              <div class="contact-info">
+                <strong data-i18n="c_map_label">Google Xaritada ko'rish</strong>
+                <span data-i18n="c_map_val">Piramida O'quv Markazi lokatsiyasi ↗</span>
+              </div>
+            </a>
+
+            <!-- Working hours -->
+            <div class="contact-card">
+              <div class="contact-icon-box" aria-hidden="true">◷</div>
+              <div class="contact-info">
+                <strong data-i18n="c_hours_label">Ish vaqti</strong>
+                <span data-i18n="c_hours_val">Dushanba - Shanba: 08:00 - 20:00</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map & Directions -->
+          <div class="map-card-col reveal">
+            <div class="map-wrapper">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.0!2d64.5853!3d39.6542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zUGlyYW1pZGEgTydxdXYgTWFya2F6aQ!5e0!3m2!1suz!2suz!4v1699000000000!5m2!1suz!2suz"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Piramida O'quv Markazi xaritada"
+              ></iframe>
+            </div>
+
+            <a
+              href="https://maps.app.goo.gl/orwFAVu6N3APkD216"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-gold"
+              style="text-align: center; justify-content: center;"
+              data-i18n="c_open_map"
+            >
+              🗺 Google Maps ilovasida ochish ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <!-- Brand Col -->
+        <div class="footer-brand">
+          <a href="#home" class="logo" aria-label="Piramida bosh sahifa">
+            <img src="assets/piramida-logo.png" alt="PIRAMIDA O'QUV MARKAZI" class="brand-logo-img brand-logo-img--footer">
+          </a>
+          <p data-i18n="footer_desc">
+            Bilim olish, o'sish va maqsadlar sari ishonch bilan qadam qo'yish uchun sizning ishonchli ta'lim maskaningiz.
+          </p>
+        </div>
+
+        <!-- Links Col -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_pages">Sahifalar</h4>
+          <ul class="footer-links">
+            <li><a href="#home" data-i18n="nav_home">Bosh sahifa</a></li>
+            <li><a href="#courses" data-i18n="nav_courses">Kurslar</a></li>
+            <li><a href="#about" data-i18n="nav_about">Markaz haqida</a></li>
+            <li><a href="#teachers" data-i18n="nav_teachers">Ustozlar</a></li>
+            <li><a href="#faq" data-i18n="nav_faq">Savol-javob</a></li>
+          </ul>
+        </div>
+
+        <!-- Courses Col -->
+        <div class="footer-col">
+          <h4 data-i18n="nav_courses">Kurslar</h4>
+          <ul class="footer-links">
+            <li><a href="#courses">Ingliz tili (IELTS)</a></li>
+            <li><a href="#courses">Matematika</a></li>
+            <li><a href="#courses">IT & Web Dasturlash</a></li>
+            <li><a href="#courses">Fizika</a></li>
+            <li><a href="#courses">Ona tili va adabiyot</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Col -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_contact">Aloqa</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+998971528400">📞 +998 (97) 152-84-00</a></li>
+            <li><a href="https://t.me/Isroilova_Ozoda" target="_blank" rel="noopener noreferrer">👩‍💼 @Isroilova_Ozoda</a></li>
+            <li><a href="https://t.me/Peramidauzbot" target="_blank" rel="noopener noreferrer">🤖 @Peramidauzbot</a></li>
+            <li><a href="https://maps.app.goo.gl/orwFAVu6N3APkD216" target="_blank" rel="noopener noreferrer">📍 Google Maps</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="currentYear"></span> <span data-i18n="footer_copy">Piramida O'quv Markazi. Barcha huquqlar himoyalangan.</span></span>
+        <span data-i18n="footer_motto">Bilim — eng katta sarmoya.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       FLOATING ACTIONS (Telegram & Back to Top)
+       ============================================================ -->
+  <div class="floating-actions" aria-label="Tezkor tugmalar">
+    <!-- Telegram Quick Button -->
+    <a
+      href="https://t.me/Isroilova_Ozoda"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="float-btn float-tg"
+      title="Telegram orqali bog'lanish"
+      aria-label="Telegram orqali bog'lanish"
+    >✈</a>
+
+    <!-- Back to top button -->
+    <button
+      type="button"
+      class="float-btn float-top"
+      id="backToTop"
+      title="Yuqoriga qaytish"
+      aria-label="Yuqoriga qaytish"
+    >↑</button>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
